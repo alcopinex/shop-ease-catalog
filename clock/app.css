@@ -1,0 +1,58 @@
+:root {
+  --bg-gradient: linear-gradient(135deg, #1e1e2f 0%, #0f172a 100%);
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --primary-color: #38bdf8;
+  --accent-color: #f43f5e;
+  --text-main: #f8fafc;
+  --border-glow: rgba(56, 189, 248, 0.2);
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--bg-gradient);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.clock-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-glow);
+  border-radius: 16px;
+  padding: 40px 60px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.clock-header {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.clock-date {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+  margin: 0 0 10px 0;
+}
+
+.clock-time {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  text-shadow: 0 0 12px rgba(244, 63, 94, 0.4);
+}
